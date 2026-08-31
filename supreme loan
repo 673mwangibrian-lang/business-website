@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Supreme Motorbikes Kenya | Motorbikes on Loan</title>
+
+  <meta name="description"
+    content="Supreme Motorbikes Kenya. Buy Boxer, TVS and Honda motorbikes on affordable loan payment plans. Free delivery. Call or WhatsApp 0756 356 007.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #050505;
+      color: white;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 4px solid #e21d25;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .logo span {
+      color: #e21d25;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e21d25;
+    }
+
+    .hero {
+      background:
+        linear-gradient(120deg, #050505, #1a1a1a, #b50d13);
+      color: white;
+      padding: 90px 6%;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 80px);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #e21d25;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 8px;
+      border-radius: 8px;
+      background: #e21d25;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .whatsapp {
+      background: #20c765;
+    }
+
+    section {
+      padding: 70px 6%;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px #0001;
+      border: 2px solid #ddd;
+    }
+
+    .card.featured {
+      border: 3px solid #e21d25;
+    }
+
+    .card h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 42px;
+      font-weight: 900;
+      color: #e21d25;
+    }
+
+    .models {
+      background: #111;
+      color: white;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .model {
+      background: #222;
+      padding: 35px;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #444;
+    }
+
+    .model h3 {
+      color: #e21d25;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .gifts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .gift {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px #0001;
+    }
+
+    .gift h3 {
+      color: #e21d25;
+      font-size: 30px;
+    }
+
+    .requirements {
+      background: #eee;
+    }
+
+    .requirements-list {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .requirement {
+      background: white;
+      margin: 12px 0;
+      padding: 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .number {
+      display: inline-block;
+      background: #e21d25;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      margin-right: 10px;
+    }
+
+    .contact {
+      background: #050505;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 45px;
+    }
+
+    .phone {
+      font-size: 38px;
+      font-weight: bold;
+      color: #20c765;
+      margin: 20px;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .offers,
+      .model-grid,
+      .gifts {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 60px 5%;
+      }
+
+      section {
+        padding: 50px 5%;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .contact h2 {
+        font-size: 32px;
+      }
+
+      .phone {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="logo">
+      SUPREME <span>MOTORBIKES</span> KENYA
+    </div>
+
+    <nav>
+      <a href="#offers">Offers</a>
+      <a href="#motorbikes">Motorbikes</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      RIDE WITH <span>CONFIDENCE.</span>
+    </h1>
+
+    <p>
+      Quality motorbikes. Great value. Built for the Kenyan road.
+      Get your motorbike on affordable daily payments.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn whatsapp"
+         href="https://wa.me/254756356007?text=Hello%20Supreme%20Motorbikes%20Kenya%2C%20I%20am%20interested%20in%20a%20motorbike%20on%20loan.">
+        WhatsApp Us
+      </a>
+
+      <a class="btn"
+         href="tel:+254756356007">
+        Call 0756 356 007
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOAN OFFERS -->
+
+<section id="offers">
+
+  <div class="container">
+
+    <h2 class="title">
+      Motorbike Loan Offers
+    </h2>
+
+    <p class="subtitle">
+      Affordable payment plans for your next motorbike.
+    </p>
+
+    <div class="offers">
+
+      <div class="card featured">
+
+        <h3>
+          Second-Hand Loan Motorbikes
+        </h3>
+
+        <div class="price">
+          KSH 10,500
+        </div>
+
+        <p>
+          Minimum deposit
+        </p>
+
+        <p>
+          <strong>Daily installment: KSH 350</strong>
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>
+          Special Loan Plan
+        </h3>
+
+        <div class="price">
+          KSH 5,700
+        </div>
+
+        <p>
+          Deposit
+        </p>
+
+        <p>
+          <strong>Daily payment: KSH 150</strong>
+        </p>
+
+        <p>
+          <strong>Period: 15 months</strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MOTORBIKES -->
+
+<section id="motorbikes" class="models">
+
+  <div class="container">
+
+    <h2 class="title">
+      Motorbike Brands
+    </h2>
+
+    <p class="subtitle" style="color:#ccc;">
+      Ask us about available models.
+    </p>
+
+    <div class="model-grid">
+
+      <div class="model">
+
+        <h3>
+          BOXER
+        </h3>
+
+        <p>
+          Reliable and practical motorbikes
+          built for everyday Kenyan roads.
+        </p>
+
+      </div>
+
+
+      <div class="model">
+
+        <h3>
+          TVS
+        </h3>
+
+        <p>
+          Dependable performance for work
+          and everyday transportation.
+        </p>
+
+      </div>
+
+
+      <div class="model">
+
+        <h3>
+          HONDA
+        </h3>
+
+        <p>
+          Trusted engineering and smooth
+          everyday performance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GIFTS -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="title">
+      Buy & Get Extra Value
+    </h2>
+
+    <p class="subtitle">
+      When you buy a Boxer, TVS or Honda,
+      enjoy these promotional extras.
+    </p>
+
+    <div class="gifts">
+
+      <div class="gift">
+
+        <h3>
+          KES 3,000
+        </h3>
+
+        <p>
+          Fuel Voucher
+        </p>
+
+      </div>
+
+
+      <div class="gift">
+
+        <h3>
+          2 LITRES
+        </h3>
+
+        <p>
+          Engine Oil
+        </p>
+
+      </div>
+
+
+      <div class="gift">
+
+        <h3>
+          2 + 2
+        </h3>
+
+        <p>
+          2 Helmets + 2 Reflectors
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REQUIREMENTS -->
+
+<section id="requirements" class="requirements">
+
+  <div class="container">
+
+    <h2 class="title">
+      Requirements for Ordering a Motorbike on Loan
+    </h2>
+
+    <div class="requirements-list">
+
+      <div class="requirement">
+        <span class="number">1</span>
+        Original ID
+      </div>
+
+      <div class="requirement">
+        <span class="number">2</span>
+        KRA PIN
+      </div>
+
+      <div class="requirement">
+        <span class="number">3</span>
+        Two Guarantors
+      </div>
+
+      <div class="requirement">
+        <span class="number">4</span>
+        Deposit
+      </div>
+
+      <div class="requirement">
+        <span class="number">5</span>
+        FREE DELIVERY
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <h2>
+      Ready To Make Your Order?
+    </h2>
+
+    <p>
+      Inbox, call or WhatsApp us today.
+    </p>
+
+    <div class="phone">
+      0756 356 007
+    </div>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/254756356007?text=Hello%20Supreme%20Motorbikes%20Kenya%2C%20I%20want%20to%20make%20an%20order.">
+
+      ORDER ON WHATSAPP
+
+    </a>
+
+    <a class="btn"
+       href="tel:+254756356007">
+
+      CALL NOW
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h3>
+    Supreme Motorbikes Kenya
+  </h3>
+
+  <p>
+    Quality Motorbikes • Great Value • Free Delivery
+  </p>
+
+  <p>
+    © 2026 Supreme Motorbikes Kenya.
+    All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
